@@ -60,4 +60,9 @@ form.addEventListener('submit', e => {
   if (currentNumber <= 9 && factorialVal === correctFactorial) {
     score++;
   }
+
+  // Reset inputs
+  squareInput.value = '';
+  sqrtInput.value = '';
+  factorialInput.value = '';
 })
