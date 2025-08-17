@@ -14,3 +14,9 @@ function generateNumber() {
   currentNumber = Math.floor(Math.random() * 11);
   numberDisplay.textContent = `Number: ${currentNumber}`;
 }
+
+// Factorial
+function factorial(n) {
+  if (n < 0) return 0;
+  return n === 0 ? 1 : n * factorial(n - 1);
+}
