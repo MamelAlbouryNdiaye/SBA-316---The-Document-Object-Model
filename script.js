@@ -65,4 +65,16 @@ form.addEventListener('submit', e => {
   squareInput.value = '';
   sqrtInput.value = '';
   factorialInput.value = '';
+
+  // Feedback
+  const fragment = document.createDocumentFragment();
+  const message = document.createElement('p');
+  if (score > 0) {
+    message.textContent = `Good job ! ${score} correct(s) answer(s)`;
+    message.classList.add('success');
+    changeBackground();
+  } else {
+    message.textContent = "Incorrect. try again.";
+    message.setAttribute("id", "error-message");
+  }
 })
