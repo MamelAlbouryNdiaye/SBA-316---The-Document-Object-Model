@@ -77,4 +77,11 @@ form.addEventListener('submit', e => {
     message.textContent = "Incorrect. try again.";
     message.setAttribute("id", "error-message");
   }
+
+   // Delete old message
+  messageContainer.innerHTML = '';
+  fragment.appendChild(message);
+  messageContainer.appendChild(fragment);
+
+
 })
