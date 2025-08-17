@@ -32,4 +32,32 @@ function changeBackground() {
 // Validation
 form.addEventListener('submit', e => {
   e.preventDefault();
+
+   //DOM  Navigation 
+  const squareInput = form.firstElementChild.nextElementSibling;
+  const sqrtInput = squareInput.nextElementSibling.nextElementSibling;
+  const factorialInput = sqrtInput.nextElementSibling.nextElementSibling;
+
+  const squareVal = parseInt(squareInput.value);
+  const sqrtVal = parseFloat(sqrtInput.value);
+  const factorialVal = parseInt(factorialInput.value);
+
+  const isPerfectSquare = Number.isInteger(Math.sqrt(currentNumber));
+  const correctSquare = currentNumber * currentNumber;
+  const correctSqrt = Math.sqrt(currentNumber);
+  const correctFactorial = factorial(currentNumber);
+
+  let score = 0;
+
+  if (!isPerfectSquare && squareVal === correctSquare) {
+    score++;
+  }
+
+  if (isPerfectSquare && sqrtVal === correctSqrt) {
+    score++;
+  }
+
+  if (currentNumber <= 9 && factorialVal === correctFactorial) {
+    score++;
+  }
 })
