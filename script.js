@@ -85,5 +85,11 @@ form.addEventListener('submit', e => {
 
   // Re-generate a number
   generateNumber();
-
+  
 })
+
+  // Launch on load
+generateNumber();
+
+// Other BOM usage
+console.log(" the window height: " + window.innerHeight);
