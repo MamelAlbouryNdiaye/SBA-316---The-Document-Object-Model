@@ -20,3 +20,11 @@ function factorial(n) {
   if (n < 0) return 0;
   return n === 0 ? 1 : n * factorial(n - 1);
 }
+
+// Background changes with each correct answer
+function changeBackground() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+}
