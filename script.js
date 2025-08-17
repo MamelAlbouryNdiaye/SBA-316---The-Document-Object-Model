@@ -28,3 +28,8 @@ function changeBackground() {
   const b = Math.floor(Math.random() * 256);
   document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 }
+
+// Validation
+form.addEventListener('submit', e => {
+  e.preventDefault();
+})
