@@ -83,5 +83,7 @@ form.addEventListener('submit', e => {
   fragment.appendChild(message);
   messageContainer.appendChild(fragment);
 
+  // Re-generate a number
+  generateNumber();
 
 })
