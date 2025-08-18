@@ -13,6 +13,8 @@ main {
   background: rgb(213, 147, 147);
   padding: 20px;
   border-radius: 10px;
+  border-color : black;
+  border-width: 5rem;
 }
 
 input {
